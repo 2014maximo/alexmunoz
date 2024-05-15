@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.fondoNegro {
+    background-color: #1d1d1d;
+}
+.l-menu {
+    height: 45px;
+    white-space: pre;
+    text-align: center;
+    margin: 1px;
+    box-shadow: 5px 5px 5px #000;
+}
+.post-z{
+    z-index: 1;
+}
+.rot-1 {
+    transform: rotate(3deg);
+    z-index: 3;
+}
+.rot-2 {
+    transform: rotate(-1deg);
+    z-index: 3;
+}
+.rot-3 {
+    transform: rotate(-3deg);
+    z-index: 3;
+}
+.bg-Wordpress{
+    background-color: #35697d;
+}
