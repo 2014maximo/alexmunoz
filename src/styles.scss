@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+
+:root {
+    --f-s-caps: "Six Caps", serif;
+}
+.fSixCaps {
+    font-family: var(--f-s-caps);
+}
 /* You can add global styles to this file, and also import other style files */
 .fondoNegro {
     background-color: #1d1d1d;
