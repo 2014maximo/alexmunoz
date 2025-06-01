@@ -6,11 +6,11 @@ import { ContactMeComponent } from './views/components/contact-me/contact-me.com
 import { ExperienceComponent } from './views/components/experience/experience.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'home', component: HomeComponent },
-    { path: 'about', component: AboutMeComponent },
-    { path: 'projects', component: ExperienceComponent },
-    { path: 'skills', component: SkillsComponent },
-    { path: 'contact', component: ContactMeComponent },
-    // Otras rutas aquí
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutMeComponent },
+  { path: 'projects', component: ExperienceComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'contact', component: ContactMeComponent },
+  // Otras rutas aquí
 ];
