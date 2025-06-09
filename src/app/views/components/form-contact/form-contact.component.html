@@ -1,1 +1,13 @@
-<p>form-contact works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="mt-4">
+  <div class="mb-3">
+    <input type="email" id="email" class="form-control" formControlName="email" placeholder="*Correo">
+    <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+    </div>
+  </div>
+  <div class="mb-3">
+    <textarea id="comments" class="form-control" formControlName="comments" rows="4" placeholder="*Mensaje"></textarea>
+    <div *ngIf="contactForm.get('comments')?.invalid && contactForm.get('comments')?.touched" class="text-danger">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary w-100" [disabled]="contactForm.invalid">Enviar</button>
+</form>
