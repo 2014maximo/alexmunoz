@@ -3,31 +3,31 @@
     <div class="col-md-8 f-open-sans-c">
         <div class="contact-me p-5" data-aos="fade-up" data-aos-duration="3000">
             <div class="bg-dark shadow-three mr-5 ml-5">
-                <div class="row">
+                <div class="row fs-20 lh-20">
                     <div class="col-md-4">
-                        <img src="assets/img/dev.jpg" alt="developer-Alex" class="img-fluid m-5">
+                        <img src="assets/img/alex-light.jpg" alt="developer-Alex" class="img-fluid">
                     </div>
                     <div class="col-md-8 text-light p-5">
                         <div class="hello">
-                            HOLA
+                            {{ 'hola' | translate }}
                         </div>
-                        <h2>Soy Alex Muñoz</h2>
-                        <p>Desarrollador de software</p>
+                        <h2>{{ 'soy' | translate }} Alex Muñoz</h2>
+                        <p>{{ 'softDev' | translate }} </p>
                         <hr>
 
                         <div class="row">
                             <div class="col-md-4">
-                                <p>EDAD:</p>
-                                <p>DIRECCIÓN:</p>
-                                <p>EMAIL:</p>
-                                <p>TELÉFONO:</p>
-                                <p>FREELANCE:</p>
+                                <p>{{ 'edad' | translate }}:</p>
+                                <p>{{ 'direccion' | translate }}:</p>
+                                <p>{{ 'correo' | translate }}:</p>
+                                <p>{{ 'telefono' | translate }}:</p>
                             </div>
                             <div class="col-md-6">
-                                <p>42</p>
+                                <p>{{ calcYear("1983-02-10") }}</p>
                                 <p>Medellín C13</p>
                                 <p><a href="mailto:alexuriel.777@gmail.com">alexuriel.777&#64;gmail.com</a></p>
                                 <p>+57 314 800 72 48</p>
+                                <button type="button" class="btn btn-primary" (click)="changeLanguage()">Primary</button>
                             </div>
                         </div>
                     </div>
