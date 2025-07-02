@@ -1,6 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url("../../../../assets/img/Virtual-Keyboard.webp");
+  background-image: url("../../../../assets/img/escritorio-gamer2.png");
 
   /* Set a specific height */
   min-height: 400px; 
@@ -8,5 +8,33 @@
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #1d1d1d;
+  position: relative;
+
+/*   &::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    opacity: 0.6; // Ajusta el valor para más o menos transparencia
+    z-index: 1;
+    pointer-events: none;
+  } */
+}
+
+.go-up {
+    color: white;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    padding: 10px;
+    background: black;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 39px 39px #000000;
+    z-index: 999;
 }

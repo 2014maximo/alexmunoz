@@ -1,10 +1,11 @@
 import { Component, ModuleWithProviders } from '@angular/core';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [NgCircleProgressModule],
+  imports: [NgCircleProgressModule,  TranslateModule],
   providers: [
     (NgCircleProgressModule.forRoot({
       radius: 100,
@@ -19,5 +20,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+
+  constructor(public translate: TranslateService,) {
+    this.translate.addLangs(['fr', 'en', 'es']);
+	    this.translate.setDefaultLang('es');
+	    this.translate.use('es');
+  }
 
 }

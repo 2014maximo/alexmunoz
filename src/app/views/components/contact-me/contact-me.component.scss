@@ -1,4 +1,16 @@
-.contact-me{
+.contact-me {
     position: relative;
     bottom: 250px;
+}
+
+.itemTranslate {
+    position: absolute;
+    top: 91px;
+    right: 88px;
+}
+.dropdown-item:hover{
+    color:#000 !important;
+}
+.dropdown-item {
+    cursor: pointer !important;
 }

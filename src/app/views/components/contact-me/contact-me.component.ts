@@ -3,27 +3,30 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import * as AOS from 'aos';
+import { AboutMeComponent } from '../about-me/about-me.component';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports:[TranslateModule, CommonModule],
+  imports:[TranslateModule, CommonModule, AboutMeComponent],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'
 })
 export class ContactMeComponent implements OnInit {
 
+  defaultLanguage: string = 'es';
+
   constructor(public translate: TranslateService,) {
-    this.translate.addLangs(['fr', 'en', 'es']);
-	    this.translate.setDefaultLang('es');
-	    this.translate.use('es');
+    this.translate.addLangs(['en', 'es']);
+	    this.translate.setDefaultLang(this.defaultLanguage);
   }
 
   ngOnInit(): void {
     AOS.init();
   }
-  changeLanguage(){
-    this.translate.use('en')
+  changeLanguage(language: string){
+    this.translate.use(language);
+    this.defaultLanguage = language;
   }
   calcYear(date: string) {
     // Convertir el string en un objeto Date

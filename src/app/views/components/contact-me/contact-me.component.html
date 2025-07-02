@@ -15,28 +15,23 @@
                         <p>{{ 'softDev' | translate }} </p>
                         <hr>
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <p>{{ 'edad' | translate }}:</p>
-                                <p>{{ 'direccion' | translate }}:</p>
-                                <p>{{ 'correo' | translate }}:</p>
-                                <p>{{ 'telefono' | translate }}:</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p>{{ calcYear("1983-02-10") }}</p>
-                                <p>Medellín C13</p>
-                                <p><a href="mailto:alexuriel.777@gmail.com">alexuriel.777&#64;gmail.com</a></p>
-                                <p>+57 314 800 72 48</p>
-                                <button type="button" class="btn btn-primary" (click)="changeLanguage()">Primary</button>
-                            </div>
-                        </div>
+                        <app-about-me></app-about-me>
+                    </div>
+                </div>
+                <div class="dropdown f-open-sans-c text-center itemTranslate">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle">
+                        <img src="assets/img/traduccion.png" alt="icon png" height="40px" width="auto" class="drop">
+                    </a>
+                    <div class="dropdown-menu bg-transparent border text-light">
+                        <a *ngIf="defaultLanguage === 'en'" class="dropdown-item text-light" (click)="changeLanguage('es')">Es</a>
+                        <a *ngIf="defaultLanguage === 'es'"class="dropdown-item text-light" (click)="changeLanguage('en')">En</a>
                     </div>
                 </div>
             </div>
 
 
-            
-            
+
+
         </div>
     </div>
     <div class="col-md-2"></div>

@@ -1,137 +1,260 @@
 <div class="row bg-transparent skills">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-        <h3 class="fSixCaps text-center text-light fs-70">HABILIDADES PROFESIONALES</h3>
+        <h3 class="fSixCaps text-center text-light fs-70">{{ 'habilidades' | translate }}</h3>
         <div class="bg-dark shadow-three mt-2 p-5">
-            <p class="text-light f-open-sans-c fs-25 lh-25">
+            <ul class="nav nav-tabs f-open-sans-c" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Tecnologías</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Detalle</button>
+                </li>
 
-            </p>
-            <div class="row">
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row pb-1 pt-5">
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/html-white.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/css.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/javascript.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/angular.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/RXJS.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                            <p class="text-light text-center f-open-sans-c">RxJS</p>
 
-                <div class="col-3">
-                    <circle-progress [percent]="85" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#f37001'" [innerStrokeColor]="'#f37001'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                    <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/html.png"
-                        class="drop" alt="logo-developer" height="30" width="auto">
-                    <p class="text-light text-center f-open-sans-c">HTML</p>
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/redux.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                    </div>
+                    <div class="row pb-3 pt-2">
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/primeng.png" class="drop" alt="logo-developer" height="40"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/ionic.png" class="drop" alt="logo-developer" height="40"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/flutter_text_white.png" class="drop" alt="logo-developer"
+                                height="60" width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/git-light.png" class="drop" alt="logo-developer" height="40"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/Node.js_logo_black.png" class="drop" alt="logo-developer"
+                                height="60" width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/wordpress2.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                            <p class="text-light text-center f-open-sans-c">Wordpress</p>
 
+                        </div>
+                    </div>
+                    <div class="row pb-3 pt-3">
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/php.png" class="drop" alt="logo-developer" height="40"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/sql.png" class="drop" alt="logo-developer" height="40"
+                                width="auto">
+                        </div>
+                        <div class="col-2 text-center">
+                            <img src="assets/img/logos/Firebase-Logo.png" class="drop" alt="logo-developer" height="60"
+                                width="auto">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#438bab'" [innerStrokeColor]="'#438bab'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                    <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/css.png"
-                        class="drop" alt="logo-developer" height="30" width="auto">
-                    <p class="text-light text-center f-open-sans-c">CSS</p>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <circle-progress [percent]="85" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#f37001'" [innerStrokeColor]="'#f37001'" [animation]="true"
+                                [animationDuration]="300"></circle-progress>
+                            <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/html.png"
+                                class="drop" alt="logo-developer" height="30" width="auto">
+                            <p class="text-light text-center f-open-sans-c">HTML</p>
+
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#438bab'" [innerStrokeColor]="'#438bab'" [animation]="true"
+                                [animationDuration]="300"></circle-progress>
+                            <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/css.png"
+                                class="drop" alt="logo-developer" height="30" width="auto">
+                            <p class="text-light text-center f-open-sans-c">CSS</p>
 
 
-                </div>
-                <div class="col-3">
-                    <circle-progress [percent]="60" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#f6d037'" [innerStrokeColor]="'#f6d037'" [animation]="true"
-                        [animationDuration]="300"></circle-progress>
-                    <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/javascript.png"
-                        class="drop" alt="logo-developer" height="30" width="auto">
-                    <p class="text-light text-center f-open-sans-c">JAVASCRIPT</p>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="60" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#f6d037'" [innerStrokeColor]="'#f6d037'" [animation]="true"
+                                [animationDuration]="300"></circle-progress>
+                            <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/javascript.png"
+                                class="drop" alt="logo-developer" height="30" width="auto">
+                            <p class="text-light text-center f-open-sans-c">JAVASCRIPT</p>
 
 
-                </div>
-                <div class="col-3 d-block">
-                    <circle-progress [percent]="75" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#ca1717'" [innerStrokeColor]="'#b52e31'" [animation]="true"
-                        [animationDuration]="400">
+                        </div>
+                        <div class="col-md-3 d-block">
+                            <circle-progress [percent]="75" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#ca1717'" [innerStrokeColor]="'#b52e31'" [animation]="true"
+                                [animationDuration]="400">
 
-                    </circle-progress>
-                    <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/angular.png"
-                        class="drop" alt="logo-developer" height="30" width="auto">
-                    <p class="text-light text-center f-open-sans-c">ANGULAR</p>
+                            </circle-progress>
+                            <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/angular.png"
+                                class="drop" alt="logo-developer" height="30" width="auto">
+                            <p class="text-light text-center f-open-sans-c">ANGULAR</p>
 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <circle-progress [percent]="50" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#e10d8d'" [innerStrokeColor]="'#e10d8d'" [animation]="true"
+                                [animationDuration]="400">
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="assets/img/logos/RXJS.png" class="drop mx-auto" alt="logo-developer"
+                                    height="30" width="auto">
+                                <p class="text-light text-center f-open-sans-c">RxJS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="55" [radius]="70" [outerStrokeWidth]="20"
+                                [innerStrokeWidth]="1" [outerStrokeColor]="'#7448b8'" [innerStrokeColor]="'#7448b8'"
+                                [animation]="true" [animationDuration]="400">
+                            </circle-progress>
+                            <img src="assets/img/logos/redux.png" class="drop" alt="logo-developer" height="30"
+                                width="auto">
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="50" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#176bff'" [innerStrokeColor]="'#176bff'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/ionic.png"
+                                    class="drop mx-auto" alt="logo-developer" height="30" width="auto">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="55" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#065b9c'" [innerStrokeColor]="'#065b9c'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/flutter_text_white.png"
+                                class="drop" alt="logo-developer" height="30" width="auto">
+                            <p class="text-light text-center f-open-sans-c">FLUTTER</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <circle-progress [percent]="40" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#f05133'" [innerStrokeColor]="'#f05133'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <i class="bi bi-git text-light git fs-25"></i>
+
+                            <p class="text-light text-center f-open-sans-c">GIT</p>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="40" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#417e38'" [innerStrokeColor]="'#417e38'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/Node.js_logo_black.png"
+                                    class="drop" alt="logo-developer" height="30" width="auto">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#35697d'" [innerStrokeColor]="'#35697d'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/wordpress2.png"
+                                    class="drop mx-auto" alt="logo-developer" height="30" width="auto">
+                            </div>
+                        </div>
+                        <div class="col-md-3"><circle-progress [percent]="55" [radius]="70" [outerStrokeWidth]="20"
+                                [innerStrokeWidth]="1" [outerStrokeColor]="'#45538b'" [innerStrokeColor]="'#45538b'"
+                                [animation]="true" [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/php.png"
+                                    class="drop" alt="logo-developer" height="30" width="auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <circle-progress [percent]="65" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#0077d5'" [innerStrokeColor]="'#0077d5'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="assets/img/logos/sql.png" class="drop" alt="logo-developer" height="30"
+                                    width="auto">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <circle-progress [percent]="65" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
+                                [outerStrokeColor]="'#dd2c00'" [innerStrokeColor]="'#dd2c00'" [animation]="true"
+                                [animationDuration]="400">
+
+                            </circle-progress>
+                            <div class="text-center">
+                                <img src="assets/img/logos/Firebase-Logo.png" class="drop" alt="logo-developer"
+                                    height="50" width="auto">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <circle-progress [percent]="50" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#176bff'" [innerStrokeColor]="'#176bff'" [animation]="true"
-                        [animationDuration]="400">
 
-                    </circle-progress>
-                    <div class="text-center">
-                        <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/ionic.png"
-                            class="drop mx-auto" alt="logo-developer" height="30" width="auto">
-                    </div>
-                </div>
-                <div class="col-3"><circle-progress [percent]="55" [radius]="70" [outerStrokeWidth]="20"
-                        [innerStrokeWidth]="1" [outerStrokeColor]="'#065b9c'" [innerStrokeColor]="'#065b9c'"
-                        [animation]="true" [animationDuration]="400">
-
-                    </circle-progress>
-                    <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/flutter_text_white.png"
-                        class="drop" alt="logo-developer" height="30" width="auto">
-                    <p class="text-light text-center f-open-sans-c">FLUTTER</p>
-                </div>
-                <div class="col-3">
-                    <circle-progress [percent]="40" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#f05133'" [innerStrokeColor]="'#f05133'" [animation]="true"
-                        [animationDuration]="400">
-
-                    </circle-progress>
-                    <i class="bi bi-git text-light git fs-25"></i>
-
-                    <p class="text-light text-center f-open-sans-c">GIT</p>
-                </div>
-                <div class="col-3">
-                    <circle-progress [percent]="40" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#417e38'" [innerStrokeColor]="'#417e38'" [animation]="true"
-                        [animationDuration]="400">
-
-                    </circle-progress>
-                    <div class="text-center">
-                        <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/Node.js_logo_black.png"
-                            class="drop" alt="logo-developer" height="30" width="auto">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <circle-progress [percent]="70" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#35697d'" [innerStrokeColor]="'#35697d'" [animation]="true"
-                        [animationDuration]="400">
-
-                    </circle-progress>
-                    <div class="text-center">
-                        <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/categorias/wordpress2.png"
-                            class="drop mx-auto" alt="logo-developer" height="30" width="auto">
-                    </div>
-                </div>
-                <div class="col-3"><circle-progress [percent]="55" [radius]="70" [outerStrokeWidth]="20"
-                        [innerStrokeWidth]="1" [outerStrokeColor]="'#45538b'" [innerStrokeColor]="'#45538b'"
-                        [animation]="true" [animationDuration]="400">
-
-                    </circle-progress>
-                    <div class="text-center">
-                        <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/php.png" class="drop"
-                            alt="logo-developer" height="30" width="auto">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <circle-progress [percent]="65" [radius]="70" [outerStrokeWidth]="20" [innerStrokeWidth]="1"
-                        [outerStrokeColor]="'#0077d5'" [innerStrokeColor]="'#0077d5'" [animation]="true"
-                        [animationDuration]="400">
-
-                    </circle-progress>
-                    <div class="text-center">
-                        <img src="https://2014maximo.github.io/trucospadesarrollo/assets/img/icons/sql.png" class="drop"
-                            alt="logo-developer" height="30" width="auto">
-                    </div>
-                </div>
-                <div class="col-3"></div>
-            </div>
 
 
 
 
         </div>
+
+
     </div>
     <div class="col-md-2"></div>
 </div>

@@ -1,40 +1,22 @@
+<p class="text-light f-open-sans-c fs-20 lh-20">
+	{{ 'acercaDe' | translate }}
+</p>
 <div class="row">
-	<div class="col-md-2"></div>
-	<div class="col-md-8">
-		<div class="bg-dark shadow-three mt-2 p-5 about-me" data-aos="fade-up" data-aos-duration="3000">
-			<p class="text-light f-open-sans-c fs-20 lh-20">
-				{{ 'acercaDe' | translate }}
-			</p>
-
-			<div class="row">
-				<div class="col-md-3"></div>
-				<div class="col-md-3">
-					<a href="assets/doc/CV_ALEX_MUNOZ_DEVELOPER_.pdf" download class="text-decoration-none">
-						<p class="l-button col bg-Javascript f-shadow-into-l cursor-p mb-2 rot-1 fs-30">
-							DESCARGAR CV
-						</p>
-					</a>
-
-				</div>
-				<div class="col-md-3">
-					<button data-bs-toggle="modal"
-						class="l-button col bg-Wordpress text-light f-shadow-into-l cursor-p mb-2 pos-z fs-30 border-0"
-						data-bs-target="#exampleModal">
-						CONTACTA ME
-					</button>
-
-				</div>
-				<div class="col-md-3"></div>
-
-
-
-			</div>
-
-		</div>
-
+	<div class="col-md-6 text-center p-3">
+		<a href="assets/doc/CV_ALEX_MUNOZ_DEVELOPER_.pdf" download class="text-decoration-none rot-2 w-100 l-button bg-Javascript f-shadow-into-l cursor-p mb-2 fs-30">
+			{{ 'descargar' | translate }}
+		</a>
 	</div>
-	<div class="col-md-2"></div>
-</div>
+	<div class="col-md-6">
+		<button data-bs-toggle="modal"
+			class="l-button bg-Wordpress text-light f-shadow-into-l cursor-p mb-2 pos-z fs-30 border-0"
+			data-bs-target="#exampleModal">
+			{{ 'contactame' | translate }}
+		</button>
+	</div>
+</div> <!-- FIN ROW -->
+
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
