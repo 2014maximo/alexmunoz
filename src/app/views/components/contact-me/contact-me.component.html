@@ -4,15 +4,18 @@
         <div class="contact-me p-5" data-aos="fade-up" data-aos-duration="3000">
             <div class="bg-dark shadow-three mr-5 ml-5">
                 <div class="row fs-20 lh-20">
-                    <div class="col-md-4">
-                        <img src="assets/img/alex-light.jpg" alt="developer-Alex" class="img-fluid">
+                    <div class="col-xxl-4 imgAlex">
+
                     </div>
-                    <div class="col-md-8 text-light p-5">
+                    <div class="col-xxl-8 text-light p-5">
                         <div class="hello">
                             {{ 'hola' | translate }}
                         </div>
                         <h2>{{ 'soy' | translate }} Alex Muñoz</h2>
                         <p>{{ 'softDev' | translate }} </p>
+                        <div class="col-xxl-4">
+                            <img src="assets/img/alex-sarku.jpg" alt="avatar-alex" class="img-fluid d-block d-xxl-none">
+                        </div>
                         <hr>
 
                         <app-about-me></app-about-me>
@@ -23,8 +26,10 @@
                         <img src="assets/img/traduccion.png" alt="icon png" height="40px" width="auto" class="drop">
                     </a>
                     <div class="dropdown-menu bg-transparent border text-light">
-                        <a *ngIf="defaultLanguage === 'en'" class="dropdown-item text-light" (click)="changeLanguage('es')">Es</a>
-                        <a *ngIf="defaultLanguage === 'es'"class="dropdown-item text-light" (click)="changeLanguage('en')">En</a>
+                        <a *ngIf="defaultLanguage === 'en'" class="dropdown-item text-light"
+                            (click)="changeLanguage('es')">Es</a>
+                        <a *ngIf="defaultLanguage === 'es'" class="dropdown-item text-light"
+                            (click)="changeLanguage('en')">En</a>
                     </div>
                 </div>
             </div>
