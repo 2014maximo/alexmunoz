@@ -21,6 +21,8 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class SkillsComponent {
 
+  active: boolean = true;
+
   constructor(public translate: TranslateService,) {
     this.translate.addLangs(['fr', 'en', 'es']);
 	    this.translate.setDefaultLang('es');

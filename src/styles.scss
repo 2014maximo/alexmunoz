@@ -26,6 +26,15 @@ html, body {
     margin: 1px;
     box-shadow: 5px 5px 5px #000;
 }
+.l-button {
+    height: 45px;
+    white-space: pre;
+    text-align: center;
+    margin: 1px;
+}
+.l-button:hover {
+    box-shadow: 5px 5px 5px #000;
+}
 .post-z{
     z-index: 1;
 }
