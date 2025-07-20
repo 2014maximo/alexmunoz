@@ -8,10 +8,11 @@ import { HobbiesComponent } from "../hobbies/hobbies.component";
 import { FromBlogComponent } from "../from-blog/from-blog.component";
 import { TestimonialsComponent } from "../testimonials/testimonials.component";
 import { FooterComponent } from '../footer/footer.component';
+import { ProjectsComponent } from '../projects/projects.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ContactMeComponent, SkillsComponent, ExperienceComponent, AboutMeComponent, HobbiesComponent, FromBlogComponent, FooterComponent, TestimonialsComponent],
+  imports: [ContactMeComponent, SkillsComponent, ExperienceComponent, AboutMeComponent, HobbiesComponent, FromBlogComponent, FooterComponent, TestimonialsComponent, ProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
