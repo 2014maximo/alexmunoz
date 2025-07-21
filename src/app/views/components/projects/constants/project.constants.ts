@@ -3,43 +3,44 @@ import { IProject } from "../models/project.model";
 export const PROJECTS: IProject[] = [
     {
         title: 'E-commerce Dashboard',
-        description: 'Panel de administración para tienda online con gestión de productos, pedidos y usuarios. Incluye gráficos de ventas y sistema de notificaciones.',
-        technologies: ['Angular', 'TypeScript', 'Bootstrap', 'Chart.js', 'Firebase'],
+        description: 'dECommerceDashboard',
+        technologies: ['Flutter Web', 'Dark', 'Firebase'],
         githubUrl: 'https://github.com/tuUsuario/ecommerce-dashboard',
         demoUrl: 'https://demo-ecommerce-dashboard.com',
         imageUrl: 'assets/img/projects/ecommerce-dashboard.png',
         features: [
-            'Autenticación y autorización',
+            'auth',
             'Gestión de inventario en tiempo real',
             'Análisis de ventas con gráficos',
             'Panel de administración responsive'
         ]
     },
     {
-        title: 'Task Management API',
-        description: 'API RESTful para gestión de tareas y proyectos. Implementa arquitectura limpia y principios SOLID.',
-        technologies: ['Node.js', 'Express', 'MongoDB', 'Jest', 'Docker'],
-        githubUrl: 'https://github.com/tuUsuario/task-management-api',
-        imageUrl: 'assets/img/projects/task-api.png',
+        title: 'Workface',
+        description: 'dWorface',
+        technologies: ['Firebase', 'Angular', 'CSS', 'html-to-image', 'Github pages'],
+        githubUrl: 'https://github.com/2014maximo/workface',
+        imageUrl: '	https://2014maximo.github.io/workface/assets/img/icons/logo-workface-white.png',
+        demoUrl: 'https://2014maximo.github.io/workface/home',
         features: [
-            'Arquitectura de microservicios',
-            'Testing automatizado',
-            'Documentación con Swagger',
-            'Containerización con Docker'
+            'Autenticación con Firebase Auth',
+            'Encriptación de datos con Firestore',
+            'Generación de imágenes de perfil con html-to-image',
+            'Interfaz de usuario responsiva con Angular bootstrap'
         ]
     },
     {
-        title: 'Weather App PWA',
-        description: 'Aplicación web progresiva para consulta del clima que funciona offline y tiene diseño responsivo.',
-        technologies: ['React', 'Redux', 'PWA', 'Weather API', 'SCSS'],
+        title: 'PathPilot',
+        description: 'Aplicación web para solucionar el problema del viajante, optimización de grupo de paradas para un viaje en las distancias más cortas.',
+        technologies: ['Angular', 'Github pages', 'API de Google Maps'],
         githubUrl: 'https://github.com/tuUsuario/weather-pwa',
         demoUrl: 'https://weather-pwa-demo.com',
         imageUrl: 'assets/img/projects/weather-app.png',
         features: [
-            'Funcionamiento offline',
-            'Geolocalización',
-            'Pronóstico por 5 días',
-            'Instalable como PWA'
+            'Autenticación con Firebase Auth',
+            'Interfaz de usuario intuitiva',
+            'Integración con la API de Google Maps para optimizar rutas',
+            'Visualización de rutas en un mapa interactivo'
         ]
     }
 ];

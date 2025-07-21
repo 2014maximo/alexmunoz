@@ -76,5 +76,13 @@
     "testimonialCargoDos":"Senior Software Architect",
     "testimonialCargoTres":"Software Engineer",
     "testimonialCargoCuatro":"Software Developer",
-    "proyectos":"PROJECTS"
+    "proyectos":"PROJECTS",
+    "terceraEra":"THIRD ERA",
+    "freelance":"FREELANCE",
+    "aMoviles":"Mobile application architecture",
+    "aActivo":"Active learning",
+    "dWorface":"Progressive web application for the generation of Curriculum Vitae in JPG format. It implements MVC architecture and SOLID principles.",
+    "dECommerceDashboard":"Administration panel for online store with management of products, orders and users. Includes sales charts and notification system.",
+    "dPathPilot":"Web application to solve the commuter problem, stop group optimization for a trip over the shortest distances.",
+    "auth":"Authentication and authorization"
 }

@@ -9,17 +9,17 @@
                     <div class="card bg-dark text-light border">
                         <div class="card-body">
                             <h3 class="card-title">{{project.title}}</h3>
-                            <p class="card-text">{{project.description}}</p>
+                            <p class="card-text">{{ project.description | translate }}</p>
                             
                             <div class="technologies mb-3">
                                 <span class="badge bg-primary me-2" *ngFor="let tech of project.technologies">
-                                    {{tech}}
+                                    {{ tech }}
                                 </span>
                             </div>
                             
                             <div class="features mb-3">
                                 <ul>
-                                    <li *ngFor="let feature of project.features">{{feature}}</li>
+                                    <li *ngFor="let feature of project.features">{{feature | translate}}</li>
                                 </ul>
                             </div>
                             

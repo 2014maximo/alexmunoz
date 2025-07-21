@@ -142,5 +142,31 @@ export const EXPERIENCE: IEras[] = [
 
             }
         ]
+    },
+    {
+        era: "terceraEra",
+        experience: [
+            {
+                entity: "freelance",
+                workPerformed: "softDev",
+                dateRange: "2023-2024",
+                place: "Medellín",
+                knowledgeAcquired: [
+                    "construccionWeb",
+                    "cmsWordpress",
+                    "desarrolloAng",
+                    "dMobileIonic",
+                    "dMobileFlutter",
+                    "aMoviles",
+                    "aActivo"
+                ],
+                styles:{
+                    dataAos:"fade-right",
+                    dataAosOffset:"200",
+                    dataAosEasing:"ease-in-out",
+                    class:"border-end"
+                }
+            }
+        ]
     }
 ]
