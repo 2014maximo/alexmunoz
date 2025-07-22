@@ -84,5 +84,15 @@
     "dWorface":"Aplicación web progresiva para la generación de Curriculum Vitae en formato JPG. Implementa arquitectura MVC y principios SOLID.",
     "dECommerceDashboard":"Panel de administración para tienda online con gestión de productos, pedidos y usuarios. Incluye gráficos de ventas y sistema de notificaciones.",
     "dPathPilot":"Aplicación web para solucionar el problema del viajante, optimización de grupo de paradas para un viaje en las distancias más cortas.",
-    "auth":"Autenticación y autorización"
+    "auth":"Autenticación y autorización",
+    "invReal":"Gestión de inventario en tiempo real",
+    "aVentas":"Análisis de ventas con gráficos",
+    "pResponsive":"Panel de administración responsive",
+    "aFiresAuth":"Autenticación con Firebase Auth",
+    "eFirestore":"Encriptación de datos con Firestore",
+    "gImagenes":"Generación de imágenes de perfil con html-to-image",
+    "inAngular":"Interfaz de usuario responsiva con Angular bootstrap",
+    "interIntui":"Interfaz de usuario intuitiva",
+    "apiGoogle":"Integración con la API de Google Maps para optimizar rutas",
+    "VRutas":"Visualización de rutas en un mapa interactivo"
 }

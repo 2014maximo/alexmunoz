@@ -28,3 +28,11 @@
 .trucos h3:hover{
     color: #FFEF27 !important;
 }
+@media (max-width: 576px) {
+    .footer{
+        text-align: center;
+    }
+    .footer-icons{
+        justify-content: center;
+    }
+}

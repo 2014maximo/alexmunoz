@@ -7,3 +7,9 @@
 .leerMas:hover {
     color: #fff;
 }
+
+@media (max-width: 576px) {
+    .post{
+        padding:3rem;
+    }
+}
