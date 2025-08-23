@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ITestimonial } from './models/testimonial.model';
 import { TESTIMONIAL } from './constants/testimonial.constant';
 
@@ -13,5 +13,11 @@ import { TESTIMONIAL } from './constants/testimonial.constant';
 })
 export class TestimonialsComponent {
   TESTIMONIALS: ITestimonial[] = TESTIMONIAL
+
+  constructor(public translate: TranslateService,) {
+		this.translate.addLangs(['fr', 'en', 'es']);
+		this.translate.setDefaultLang('es');
+		this.translate.use('es');
+	}
 
 }
