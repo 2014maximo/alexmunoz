@@ -12,3 +12,13 @@
 .height-btn:hover{
     font-weight: bold;
 }
+
+.remove-padding{
+    padding: 3rem;
+}
+
+@media (max-width: 418px) {
+    .remove-padding {
+        padding: 0 !important;
+    }
+}
